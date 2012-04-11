@@ -4,6 +4,7 @@ function checkSupported() {
 	drawCanvas('canvas');
  }
 
+// Draw on the given canvas
 function drawCanvas(canvas){
 	canvas = document.getElementById(canvas);
     if (canvas.getContext){
@@ -31,6 +32,7 @@ function drawCanvas(canvas){
     }
 }
 
+// Draw all elents passed to this method. Should maybe pass which canvas to draw on.
 function drawElements(elements){
 	for(item in items){
 		drawRandomItem(item);
